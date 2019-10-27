@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>장고테스트</title>
+</head>
+<body>
+
+<div>
+    <div>
+        테스트합니다.
+    </div>
+    <hr>
+    <div>
+        {% for post in posts %}
+        <div>
+            <h1>제목 : <a href="">{{ post.title }}</a></h1>
+            <p>작성시간 : {{ post.created_date }}</p>
+            <p>내용 : {{ post.text|linebreaksbr }}</p>
+        </div>
+        <hr>
+        {% endfor %}
+
+    </div>
+</div>
+</body>
+</html>
